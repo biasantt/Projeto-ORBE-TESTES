@@ -461,7 +461,6 @@ void atualizarCorrecao() {
   // ---- A correcao piorou o erro: provavelmente o sentido esta invertido ----
   if (tentativaAtual >= 1 && fabsf(erro) > fabsf(erroAnterior) + 3.0f) {
     corrigindo = false;
-    mostrarMensagem("Erro aumentou!", "Inverta sentido");
     Serial.println("Erro aumentou: troque SENTIDO_POSITIVO_E_HORARIO.");
     delay(2000);
     mostrarFase(faseAtual);
